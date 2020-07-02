@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 50px;
+}
+
+/* home page */
+
+.title {
+	background: #ffcccb;
+	padding: 60px;
+	text-align:center;
+	border-radius: 10px;
+}
+
+
+.title:hover {
+	cursor: pointer;
+	background: light-gray;
+	visibility: visible;
+}
+
+h2 {
+	text-align:center;
+	padding: 40px;
+}
+
+.mid-section {
+	position:relative;
+	background: #FED8B1;
+	top: -35px;
+	padding-bottom: 50px;
+}
+
+/* travel */
+h4 {
+	padding: 30px;
+	text-align: center;
+}
+
+/* represents whole image */
+#pic {
+	position: relative;
+	padding:5px;
+	background-color: light-gray;
+	opacity: 1;
+}
+
+/* hover over JUST the picture, not involving text */
+#pic:hover {
+	opacity: 0.7;
+}
+
+/* set position of text */
+#pic > .caption {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	font-weight: bold;
+	color: black;
+}
+
+/* when the whole picture hovers, this only focuses on the text */
+#pic:hover > .caption {
+	visibility: visible;
+
+}
+
+/* Photos */
+.w-50 {
+	display:block;
+	margin: auto;
+}
+
+.carousel-inner {
+	background:#D3D3D3;
+}
+
+body > a > span {
+	position:relative;
+	top: -85px;
+}
+
+/* About me */
+h3 {
+	text-align: center;
+	padding: 30px;
+}
+
+.profile {
+	background: white;
+	padding-bottom: 500px;
+}
+
+.container-sm {
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+
+}
+
+/* Contact */
+
+#contactHeader {
+	text-align:center;
+	padding: 40px;
+}
+
+/* thank you */
+.message {
+	text-align: center;
+	font-size: 50px;
+	padding: 50px;
+	padding-bottom: 500px;
+}
+
+/* footer */
+
+.end {
+	padding:30px;
+	background-color: white;
+
+}
+
+.footer {
+	padding: 10px;
+	background-color: white;
+	text-decoration: none
+}
+
+.fab {
+	color: #A9A9A9;
+	font-size: 30px;
+text-decoration: none
+}
+
+.fas {
+	color: #A9A9A9;
+	font-size:30px;
+}
+
+i:hover {
+	color:blue;
+	font-size:40px;
+	text-decoration: none
+
+}
+
+.logos {
+	text-align: center;
+	display: block;
+	justify-content: space-between;
+
+}
+
+.github {
+	padding: 5px;
+}
+
+.facebook {
+	padding: 5px;
+}
+
+.envelope {
+	padding: 5px;
+}
