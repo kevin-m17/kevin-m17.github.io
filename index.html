@@ -4,57 +4,384 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
+
     <title>Kevin's Website</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a84da40d8a.js" crossorigin="anonymous"></script>
+
+    <style>
+        .bg-dark {
+            background: transparent !important;
+            transition: 0.5s ease;
+        }
+
+        .bg-dark.scrolled {
+            background: #f5f5f4 !important;
+            transition: 0.5s ease;
+        }
+
+        .bg-img {
+            background-image: url("paris.jpg");
+            height:700px;
+            width: 100%;
+            -webkit-background-size: 100% auto;
+            -moz-background-size: 100% auto;
+            -ms-background-size: 100% auto;
+            -o-background-size: 100% auto;
+            background-size: 100% auto;
+        }
+
+        /* .nav-link.scrolled {
+            background: #e98708 !important;
+        } */
+
+        .bg-primary {
+            background: #f9f9ff !important;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: white;
+            color: black !important;
+            visibility: visible;
+        }
+
+        .card-title {
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .btn-success:hover {
+            cursor: pointer;
+        }
+        /* .w-100 {
+            width: 70%;
+            height: 70%;
+        } */
+
+        /* timer */
+        .outside {
+            padding-bottom: 300px;
+        }
+
+        .main {
+            background:brown;
+            width:400px;
+            height: 180px;
+            margin: 100px auto;
+            padding:40px;
+        }
+
+        .timer {
+            background: gray;
+            font-size: 50px;
+            text-align:center; 
+        }
+
+        #startButton {
+            position: relative;
+            background: black;
+            color: yellow;
+            top:5px;
+            padding:15px;
+        }
+
+        #endButton {
+            position: relative;
+            background: black;
+            color: yellow;
+            top:5px;
+            padding:15px;
+            width: 20%;
+            left: 181px;
+        }
+
+        
+    </style>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="110">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">Kevin.</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="topSection">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top" id="theTopBar">
+                <a class="navbar-brand" href="#">
+                    <img src="linkedinpfp.png" id="pfp">
+                </a>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a href="#home" class="nav-link active">
+                            Home
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">
                             Projects
                         </a>
-                        <div class="dropdown-menu">
+                        <!-- <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Rubix Cube</a>
                             <a class="dropdown-item" href="timer.html">Pomodoro Timer</a>
-                        </div>
+                        </div> -->
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="travel.html">Travel</a>
+                        <a href="#currentwork" class="nav-link">Current Work</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a href="#travel" class="scrollto nav-link">Travel</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a data-smooth="#contact" href="#contact" class="scrollto nav-link">Contact</a>
                     </li>
                 </ul>
+            </nav>
+        </div>
 
+        <div id="home">
+            <div class = "bg-img">
+                <div class="centerText">
+                    Hi, I am Kevin!
+                    <br> 
+                    <a href="#currentwork" class="btn btn-transparent text-white rounded-0" id = "frontButton">What I'm Currently Working On</a>
+                </div>
             </div>
+        </div>
 
-        </nav>
+        <div id="about">
+            <div class="card bg-primary">
+                <div class="card-body">
+                  <h5 class="card-title"><b>About Me<hr class = "lined"></b></h5>
+                  <p class="card-text">
+                    Hello! My name is Kevin and I am currently a Princeton University student on a gap year majoring in
+                    majoring in Computer Science, with certificates in Statistics & Machine Learning, Finance,
+                    and Music. 
+
+                    <br>
+                    <br>
+
+                    In my free time, I enjoy working on independent projects, reading, and fishing.
 
 
-        <div class = "jumbotron">
-            <div class = "container"> 
+                    </p>
+                </div>
+              </div>
+        </div>
+
+        <div id="projects">
+            <div class="card bg-white">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Projects<hr class = "lined"></b></h5>
+                  <!-- <p class="container" id="appName">Sensor App</p> -->
+                  <p class="container" id="appName">Organizer App</p>
+                  <!-- <div class="container" id="photos"> -->
+                    <!-- <div class="row no-gutters">
+                        <!-- <br>
+                        <h1> Sensor Data App </h1>
+                        <br>
+                        <br> -->
+                        
+                        <!-- <div class="col-md-6" id="pic">
+                            <img src="sensorapp.png">
+                        </div>
+            
+                        <div class="col-md-6" id="pic">
+                            <img src="sensoremail.png" class = "w-100">
+                            <div class="caption"> 
+                                <!-- <div class="text">Boston</div> -->
+                            <!-- </div>            
+                        </div> 
+                        <br>
+                        <br> -->
+                    <!-- </div> -->
+
+                    <div class="row no-gutters">
+                        <div class="col-md-4" id="pic">
+                            <img src="orgapp1.png" class = "w-100">
+                            <div class="captionUnder"> 
+                            </div>
+                        </div>
+            
+                        <div class="col-md-4" id="pic">
+                            <img src="orgapp2.png" class = "w-100">
+                            <div class="caption"> 
+                                <!-- <div class="text">Boston</div> -->
+                            </div>            
+                        </div>
+
+                        <div class="col-md-4" id="pic">
+                            <img src="orgapp3.png" class = "w-100">
+                            <div class="caption"> 
+                                <!-- <div class="text">Boston</div> -->
+                            </div>            
+                        </div>
+                        <p class="container" id="appName">Maze Generator</p>
+                    </div>
+
+                    <div class="row no-gutters">
+                        <div class="col-md-12" id="pic">
+                            <img src="screenshot.png" class = "w-100">
+
+                            <!-- <div class="captionUnder"> 
+                                Sensor App
+                            </div> -->
+                        </div>
+                        <p class="container" id="appName">Pomodoro Timer(double click)</p>
+                    </div>
+
+                    <div class="outside">
+                        <div class = "main">
+                            <div class = "timer">
+                                <span id = "minute">25</span>
+                                <span id = "second">:00</span>
+                            </div>
+                
+                            <div class = "buttons">
+                                <button id = "startButton" onclick = "startClick()">Start</button>
+                                <button id = "endButton" onclick = "endClick()">End</button>
+                            </div>
+                        </div>     
+                    </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+        </div>
+
+        <div id="currentwork">
+            <div class="card bg-primary">
+                <div class="card-body">
+                  <h5 class="card-title"><b>My Current Work<hr class = "lined"></b></h5>
+                  <p class="card-text">
+                    At the moment, I'm working on answering unanswered questions in the Stanford Question 
+                    Answering Dataset. I am currently working with BERT (Bidirectional Encoder Representations from Transformers)
+                    to find answers, in particular to questions that require inferences. BERT works to convert
+                    words to numbers, which I am in the process of doing.
+
+                    <br>
+                    <br>
+
+                    In addition, I'm auditing a few Princeton classes at the moment, 
+
+
+                    </p>
+                </div>
+              </div>
+        </div>
+
+        <div id="travel">
+            <div class="card bg-primary">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Travel<hr class = "lined"></b></h5>
+                  <div class="container" id="photos">
+                    <div class="row no-gutters">
+                        <div class="col-md-4" id="pic">
+                            <img src="sanfran.JPG" class = "w-100">
+                            <div class="caption"> 
+                                <div class="text">San Francisco</div>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-4" id="pic">
+                            <img src="boston.JPG" class = "w-100">
+                            <div class="caption"> 
+                                <div class="text">Boston</div>
+                            </div>            
+                        </div>
+            
+                        <div class="col-md-4" id="pic">
+                            <img src="nathar.jpg" class = "w-100">
+                            <div class="caption"> 
+                                <div class="text">National Harbor</div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="row no-gutters">
+                        <div class="col-md-4" id="pic">
+                            <img src="reston.jpg" class = "w-100">
+                            <div class="caption"> 
+                                <div class="text">Reston</div>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-4" id="pic">
+                            <img src="scenic.jpg" class = "w-100">
+                            <div class="caption"> 
+                                <div class="text">Miami</div>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-4" id="pic">
+                            <img src="newhaven.jpg" class = "w-100">
+                            <div class="caption"> 
+                                <div class="text">New Haven</div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="row no-gutters">
+                        <div class="col-md-4" id="pic">
+                            <img src="paris.jpg" class = "w-100">
+                            <div class="caption"> 
+                                <div class="text">Paris</div>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-4" id="pic">
+                            <img src="cambridge.JPG" class = "w-100">
+                            <div class="caption"> 
+                                <div class="text">Cambridge</div>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-4" id="pic">
+                            <img src="pbeach.JPG" class = "w-100">
+                            <div class="caption"> 
+                                <div class="text">Pebble Beach</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div id="content">
+                <div class="card bg-white">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Contact Me<hr class = "lined"></b></h5>
+                            <div class="container-sm">
+                                <form action="thankYou.html">
+                                <div>Email: <BR> <input type="text" name="email" value="" placeholder="email" style = "padding: 10px;">
+                                </div>
+                        
+                                <div><BR>Phone Number: <BR> <input type="text" name="phonenumber" value="" placeholder="phone number" style = "padding: 10px;">
+                                </div>
+                        
+                                <div><BR> Message: <BR> <textarea rows = 10 cols = 100 style = "padding: 10px;"></textarea>
+                                </div>
+                                    <input class="btn-success text-white rounded-0" type="submit" value="Contact!" id="contactButton"> 
+                                    </form>
+                            </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+
+        <!-- <div class = "jumbotron">
+            <div class = "container" style="height:150vh;"> 
                 <h1>Welcome to my site!</h1>
-                <p>I'm a Princeton University student majoring in computer science.</p>
+                <p>I'm a rising sophomore majoring in computer science.</p>
                 <a href="about.html" class="btn btn-warning">Read More</a>
             </div>
         </div>
@@ -62,24 +389,27 @@
 
 
 
-            <div class="mid-section">
+            <div class="mid-section"style="height:150vh;" >
                 <h2>Works in Progress:</h2>
                 <div class = "container">
                     <div class="row">
-
-                        <div class="col-md-6">
-                            <div class = "title" id = "rubik">Rubik's Cube using Neural Networks</div>
+                        <div class="col-md-4">
+                            <div class = "title" id = "soccer">Soccer</div>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class = "title" id = "nba">Algorithmic Trading with Machine Learning</div>
+                        <div class="col-md-4">
+                            <div class = "title" id = "rubik">Rubik's Cube</div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class = "title" id = "nba">NBA Analysis</div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         
 
-    <div class ="end">
+    <div class ="end bg-primary">
 
         <footer>
         <div class = "logos">
@@ -102,9 +432,48 @@
         </div>
         </footer>
     </div>
-  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src = "timer.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+             $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+            
+                // Store hash
+                var hash = this.hash;
+            
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 100
+                }, 750) 
+                // function(){
+                //     console.log("yessirr")
+                //     // Add hash (#) to URL when done scrolling (default click behavior)
+                //     window.location.hash = hash;
+                //     // $('html').animate({ 'scrollTop': scrollToPosition }, 0);
+                // });
+                } // End if
+            });
+        });
+        </script>
   </body>
 </html>
