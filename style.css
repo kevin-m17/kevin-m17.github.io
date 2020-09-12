@@ -4,11 +4,17 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	padding-top: 50px;
+	margin:0px;
+	padding:0px;
 }
 
 /* home page */
+
 
 .title {
 	background: #ffcccb;
@@ -22,6 +28,52 @@ body {
 	cursor: pointer;
 	background: light-gray;
 	visibility: visible;
+}
+
+#frontButton {
+	border-color: white;
+	padding: 20px;
+}
+
+.topSection {
+	position: relative; 
+	width: 100%;
+	height: 90%;
+}
+
+.centerText {
+	position: absolute; 
+	top: 50%; 
+	text-align: center; 
+	width: 100%; 
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#pfp {
+    height: 25%;
+    width: 25%;
+}
+
+.nav-link {
+	font-weight: bold;
+}
+
+.card {
+	padding: 20px !important;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+h5 {
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	/* padding: 30px; */
 }
 
 h2 {
@@ -73,6 +125,7 @@ h4 {
 }
 
 /* Photos */
+
 .w-50 {
 	display:block;
 	margin: auto;
@@ -106,11 +159,35 @@ h3 {
 
 }
 
+/* projects */
+.captionUnder {
+	text-align: center;
+	padding: 5px;
+}
+
+#appName {
+	font-size: 30px;
+	font-weight:bold;
+	padding:10px;
+}
+
 /* Contact */
 
-#contactHeader {
+/* h50 {
 	text-align:center;
-	padding: 40px;
+
+} */
+
+#contactButton {
+	border-color: white;
+	padding: 20px;
+}
+
+
+.lined {
+	border: 1px solid orange;
+	width: 7%;
+	margin: auto;
 }
 
 /* thank you */
