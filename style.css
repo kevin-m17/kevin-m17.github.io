@@ -171,6 +171,172 @@ h3 {
 	padding:10px;
 }
 
+/* #portButton {
+	width: 200px;
+	height: 200px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+#imageButton {
+	background-image: url('mazepic.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+}
+
+#imageButton1 {
+	background-image: url('personalwebsite.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	left: 5%;
+}
+/* .portButton {
+	width: 200px;
+	height: 200px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#imgPortfolio {
+	display:block;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+} */
+
+.innerPic { 
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-transform: uppercase;
+} 
+
+.outerPic {
+	opacity: 0;
+	background-color: rgba(255, 119, 29, 0.9);
+}
+
+#imageButton:hover {
+	transform: scale(1.13);
+	background-image: none;
+	background-color: rgba(255, 119, 29, 0.9);
+
+}
+
+#imageButton:hover .outerPic {
+	opacity: 1;
+	background-color: rgba(255, 119, 29, 0.9);
+
+}
+
+#imageButton1:hover {
+	transform: scale(1.13);
+	background-image: none;
+	background-color: rgba(255, 119, 29, 0.9);
+
+}
+
+#imageButton1:hover .outerPic {
+	opacity: 1;
+	background-color: rgba(255, 119, 29, 0.9);
+
+}
+
+/* #portButton {
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+} */
+
+/* #portButton #imgportfolio {
+	width: 200px;
+     height: 200px;
+	 background-position: 50% 50%;
+} */
+     /* background-repeat: no-repeat;
+	 background-size: cover; */
+
+
+/* .paragraph {
+	position: absolute;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+
+/* .backgroundpic:hover {
+	background: #000000;
+}
+
+img:hover,
+.backgroundpic:hover img {
+    visibility: hidden;
+} */
+
+/* .paragraph:hover {
+	visibility:visible;
+}
+
+#portButton:hover {
+	transform: scale(1.13);
+	opacity: 0.2;
+	background: rgba(0,0,0,0.2);
+	visibility:visible;
+}
+
+#portButton:hover > .paragraph {
+	position: absolute;
+	top: 50%;
+	visibility:visible;
+} */
+
+/* #imgportfolio:hover{
+	transform: scale(1.13);
+} */
+
+/* .button:hover > p {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+} */
+
+/* #portButton:hover #portcaption {
+	transform: scale(1.13);
+	background: rgba(36, 62, 206, 0.6);
+}
+
+#portButton > p {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	font-weight: bold;
+	color: black;
+} */
+
 /* Contact */
 
 /* h50 {
