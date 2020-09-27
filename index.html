@@ -28,8 +28,8 @@
             -webkit-background-size: 100% auto;
             -moz-background-size: 100% auto;
             -ms-background-size: 100% auto;
-            background-size: 100% auto;
             -o-background-size: 100% auto;
+            background-size: 100% auto;
         }
 
         /* .nav-link.scrolled {
@@ -121,7 +121,7 @@
 
                     <li class="nav-item">
                         <a href="#projects" class="nav-link">
-                            Projects
+                            Portfolio
                         </a>
                         <!-- <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Rubix Cube</a>
@@ -159,7 +159,7 @@
                 <div class="card-body">
                   <h5 class="card-title"><b>About Me<hr class = "lined"></b></h5>
                   <p class="card-text">
-                    Hello! My name is Kevin and I am currently a Princeton University student on a gap year 
+                    Hello! My name is Kevin and I am currently a Princeton University student on a gap year majoring in
                     majoring in Computer Science, with certificates in Statistics & Machine Learning, Finance,
                     and Music. 
 
@@ -177,9 +177,64 @@
         <div id="projects">
             <div class="card bg-white">
                 <div class="card-body">
-                  <h5 class="card-title"><b>Projects<hr class = "lined"></b></h5>
+                  <h5 class="card-title">Portfolio<hr class = "lined"></b></h5>
                   <!-- <p class="container" id="appName">Sensor App</p> -->
-                  <p class="container" id="appName">Organizer App</p>
+                  <!-- <p class="container" id="appName">Organizer App</p> -->
+
+                  <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" id="imageButton">
+                            <!-- <img src="mazepic.png" id="imgportfolio"> -->
+                            <div class = "outerPic">
+                                <div class="innerPic">Maze Generator and Solver</div>
+                            </div>
+                    </button>
+
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" id="imageButton1">
+                        <!-- <img src="mazepic.png" id="imgportfolio"> -->
+                        <div class = "outerPic">
+                            <div class="innerPic">Personal Website</div>
+                        </div>
+                    </button>
+                    
+                    <!-- <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                        <div id="portButton">
+                            <span class="backgroundpic">
+                                <img style="background-color: gray;" src="personalwebsite.png" id="imgportfolio">
+                            </span>
+                            <div class="paragraph">
+                                <p style="color: yellow;">Personal Website</p>
+                            </div>
+                    </div>
+                    </button>
+
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                        <div id="portButton">
+                            <img src="orgapp.png" id="imgportfolio">
+                            <div class="paragraph">
+                                <p style="color: yellow;">Organizer App</p>
+                            </div>
+                        </div>                    
+                    </button> -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            ...
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                   <!-- <div class="container" id="photos"> -->
                     <!-- <div class="row no-gutters">
                         <!-- <br>
@@ -201,7 +256,7 @@
                         <br> -->
                     <!-- </div> -->
 
-                    <div class="row no-gutters">
+                    <!-- <div class="row no-gutters">
                         <div class="col-md-4" id="pic">
                             <img src="orgapp1.png" class = "w-100">
                             <div class="captionUnder"> 
@@ -211,26 +266,21 @@
                         <div class="col-md-4" id="pic">
                             <img src="orgapp2.png" class = "w-100">
                             <div class="caption"> 
-                                <!-- <div class="text">Boston</div> -->
                             </div>            
                         </div>
 
                         <div class="col-md-4" id="pic">
                             <img src="orgapp3.png" class = "w-100">
                             <div class="caption"> 
-                                <!-- <div class="text">Boston</div> -->
                             </div>            
                         </div>
-                        <p class="container" id="appName">Maze Generator</p>
-                    </div>
+                        <p class="container" id="appName">Maze Generator</p> -->
+                    <!-- </div>
 
                     <div class="row no-gutters">
                         <div class="col-md-12" id="pic">
                             <img src="screenshot.png" class = "w-100">
 
-                            <!-- <div class="captionUnder"> 
-                                Sensor App
-                            </div> -->
                         </div>
                         <p class="container" id="appName">Pomodoro Timer(double click)</p>
                     </div>
@@ -248,7 +298,7 @@
                             </div>
                         </div>     
                     </div>
-                    </div>
+                    </div> -->
                 </div>
                 </div>
               </div>
@@ -267,8 +317,7 @@
                     <br>
                     <br>
 
-                    In addition, I'm working on a Twitter Analysis, and analyzing the tweets of US government workers. I am currently constructing a LSTM Network (Long Short Term Memory Network)
-                    to train it in finding patterns in these tweets.
+                    In addition, I'm auditing a few Princeton classes at the moment, 
 
 
                     </p>
@@ -320,7 +369,7 @@
                         </div>
             
                         <div class="col-md-4" id="pic">
-                            <img src="newhaven.JPG" class = "w-100">
+                            <img src="newhaven.jpg" class = "w-100">
                             <div class="caption"> 
                                 <div class="text">New Haven</div>
                             </div>
@@ -434,6 +483,8 @@
         </footer>
     </div>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src = "timer.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -448,22 +499,29 @@
 
     <script>
         $(document).ready(function(){
+        // Add smooth scrolling to all links
             $("a").on('click', function(event) {
             
+                // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
+                // Prevent default anchor click behavior
                 event.preventDefault();
             
+                // Store hash
                 var hash = this.hash;
             
-
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top - 100
                 }, 750) 
                 // function(){
+                //     console.log("yessirr")
+                //     // Add hash (#) to URL when done scrolling (default click behavior)
                 //     window.location.hash = hash;
                 //     // $('html').animate({ 'scrollTop': scrollToPosition }, 0);
                 // });
-                } 
+                } // End if
             });
         });
         </script>
