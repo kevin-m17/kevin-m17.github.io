@@ -161,6 +161,10 @@ h3 {
 
 /* projects */
 
+#projects {
+	background-color: rgb(81, 91, 185);
+}
+
 .captionUnder {
 	text-align: center;
 	padding: 5px;
@@ -186,72 +190,131 @@ h3 {
 
 
 #imageButton {
+	background-image: url('safetyf.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	margin-bottom: 35px;
+	/* left: 20%; */
+	/* margin-bottom: 35px;
+	background-image: url('mazepic.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	margin-bottom: 35px; */
+}
+
+#imageButton1 {
+	background-image: url('GAN.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	/* background-image: url('websitef.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	margin-bottom: 35px; */
+}
+
+#imageButton2 {
+	background-image: url('car.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	/* background-image: url('realOrganize.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	margin-bottom: 35px; */
+}
+
+#imageButton3 {
 	background-image: url('mazepic.png');
 	width: 200px;
 	height:200px;
 	position:relative;
 	margin-bottom: 35px;
-}
-
-#imageButton1 {
-	background-image: url('personalwebsite.png');
+	/* background-image: url('minesweeper.png');
 	width: 200px;
 	height:200px;
 	position:relative;
-	/* left: 5%; */
-	margin-bottom: 35px;
+	margin-bottom: 35px; */
 }
 
-#imageButton2 {
+#imageButton4 {
+	background-image: url('websitef.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	margin-bottom: 35px;
+	/* background-image: url('breastcancer.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	margin-bottom: 35px; */
+}
+
+#imageButton6 {
 	background-image: url('realOrganize.png');
 	width: 200px;
 	height:200px;
 	position:relative;
-	/* left: 10%; */
 	margin-bottom: 35px;
+	/* background-image: url('safetyf.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	margin-bottom: 35px; */
 }
 
-#imageButton3 {
+#imageButton7 {
 	background-image: url('minesweeper.png');
 	width: 200px;
 	height:200px;
 	position:relative;
-	/* left: 15%; */
 	margin-bottom: 35px;
-}
-
-#imageButton4 {
-	background-image: url('breastcancer.png');
+	/* background-image: url('GAN.png');
 	width: 200px;
 	height:200px;
-	position:relative;
-	/* left: 20%; */
-	margin-bottom: 35px;
-}
-
-#imageButton7 {
-	background-image: url('GAN.png');
-	width: 200px;
-	height:200px;
-	position:relative;
-	/* top: 20%; */
+	position:relative; */
 }
 
 
 #imageButton8 {
-	background-image: url('moneyshow.png');
+	background-image: url('breastcancer.png');
 	width: 200px;
 	height:200px;
 	position:relative;
-	/* left: 20%; */
 	margin-bottom: 35px;
+	/* background-image: url('currencyf.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	margin-bottom: 35px; */
 }
 
 #imageButton9 {
+	background-image: url('currencyf.png');
+	width: 200px;
+	height:200px;
+	position:relative;
+	margin-bottom: 35px;
+	/* background-image: url('timer.png');
+	width: 200px;
+	height:200px;
+	position:relative; */
+	/* top: 20%; */
+}
+
+#imageButton10 {
 	background-image: url('timer.png');
 	width: 200px;
 	height:200px;
 	position:relative;
+	/* background-image: url('car.png');
+	width: 200px;
+	height:200px;
+	position:relative; */
 	/* top: 20%; */
 }
 
@@ -442,6 +505,19 @@ h3 {
 }
 
 #imageButton9:hover .outerPic {
+	opacity: 1;
+	background-color: rgba(255, 119, 29, 0.9);
+
+}
+
+#imageButton10:hover {
+	transform: scale(1.13);
+	background-image: none;
+	background-color: rgba(255, 119, 29, 0.9);
+
+}
+
+#imageButton10:hover .outerPic {
 	opacity: 1;
 	background-color: rgba(255, 119, 29, 0.9);
 
