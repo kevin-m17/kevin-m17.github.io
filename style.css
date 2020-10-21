@@ -60,12 +60,22 @@ body {
 	font-weight: bold;
 }
 
-.card {
+/* .card {
 	padding: 20px !important;
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .card-text {
+	margin-left: 30%;
+	margin-right: 30%;
+} */
+
+#bodycard {
+	padding: 20px !important;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#cardtext {
 	margin-left: 30%;
 	margin-right: 30%;
 }
@@ -160,10 +170,6 @@ h3 {
 }
 
 /* projects */
-
-#projects {
-	background-color: rgb(81, 91, 185);
-}
 
 .captionUnder {
 	text-align: center;
