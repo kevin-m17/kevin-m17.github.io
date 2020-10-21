@@ -134,6 +134,12 @@ h4 {
 
 }
 
+#ptoncard:hover{
+	transform: scale(1.05);
+    -webkit-transition: .5s all;    
+
+}
+
 /* Photos */
 
 .w-50 {
