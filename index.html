@@ -149,24 +149,22 @@
                 <div class="centerText">
                     Hi, I am Kevin!
                     <br> 
-                    <a href="#currentwork" class="btn btn-transparent text-white rounded-0" id = "frontButton">What I'm Currently Working On</a>
+                    <a href="#projects" class="btn btn-transparent text-white rounded-0" id = "frontButton">Click for My Portfolio!</a>
                 </div>
             </div>
         </div>
 
         <div id="about">
-            <div class="card bg-primary">
+            <div class="card" style="background-color: antiquewhite;" id="bodycard">
                 <div class="card-body">
                   <h5 class="card-title"><b>About Me<hr class = "lined"></b></h5>
-                  <p class="card-text">
-                    Hello! My name is Kevin and I am currently a Princeton University student 
+                  <p class="card-text" id="cardtext" style="text-align: center;">
+                    Hello! My name is Kevin and I am currently a Princeton University student
                     majoring in Computer Science, with certificates in Statistics & Machine Learning, Finance,
                     and Music. 
 
                     <br>
                     <br>
-
-                    In my free time, I enjoy working on independent projects, reading, and fishing.
 
 
                     </p>
@@ -175,13 +173,13 @@
         </div>
 
         <div id="projects">
-            <div class="card bg-white">
+            <div class="card" style="background-color:#626a86;">
                 <div class="card-body">
-                  <h5 class="card-title">Portfolio<hr class = "lined"></b></h5>
+                  <h5 class="card-title" style="color: black;">Portfolio<hr class = "lined"></b></h5>
                   <!-- <p class="container" id="appName">Sensor App</p> -->
                   <!-- <p class="container" id="appName">Organizer App</p> -->
 
-                  <h5 class = "projectLayer">Personal Projects</h5>
+                  <h5 class = "projectLayer" style="color:white;"><b>Personal Projects</b></h5>
 
                   <!-- Button trigger modal -->
                   <div class="container px-5 py-2"> 
@@ -230,7 +228,7 @@
                             <div class="col mx-1">
                                 <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal3" id="imageButton3">
                                         <div class = "outerPic">
-                                            <div class="innerPic">Maze Generator and Solver</div>
+                                            <div class="innerPic">Maze Generator</div>
                                         </div>
                                 </button>
                                 <!-- <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal3" id="imageButton3">
@@ -328,7 +326,7 @@
                       </div>
                 </div>
 
-                <h5 class = "projectLayer">Hackathon Projects</h5>
+                <h5 class = "projectLayer" style="color:white;"><b>Hackathon Projects</b></h5>
                 <div class="container"> 
                   <div class = "row" style="text-align: center;">
                       <div class="col-md-6">
@@ -350,49 +348,67 @@
                   </div>
               </div>
 
-
-              <h5 class = "projectLayer">School Projects</h5>
-              <div class="container"> 
-                <div class = "row" style="text-align: center;">
-                    <div class="col-md-6">
-                          <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal11" id="imageButtonH">
-                                  <!-- <img src="mazepic.png" id="imgportfolio"> -->
-                                  <div class = "outerPic">
-                                      <div class="innerPic">CovidCollaboration</div>
-                                  </div>
-                          </button>
-                      </div> 
-
-                      <div class="col-md-6">
-                        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal12" id="imageButtonH1">
-                              <div class = "outerPic">
-                                  <div class="innerPic">A Blind Date with an Album</div>
-                              </div>
-                          </button>
-                      </div>
+              <h5 class = "projectLayer" style="color:white;"><b>School Projects</b></h5>
+              <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 py-2">
+                        <div class="card card-body h-100">
+                            <h5 class="card-title" style="font-size:2vw;">Seam Carving</h5>
+                            <p class="card-text" style="text-indent: 40px;">
+                                This was an assignment in my COS 226 (Data Structure and Algorithms) class.
+                                Seam Carving is an image resizing technique that removes image pixels (horizontally
+                                or vertically) based on pixel energy.
+                                <p style="text-indent: 40px;">
+                                    The goal was to find a path of pixels (horizontally and vertically) that combine
+                                    to have the minimum total energy. Energy computation was based off a gradient
+                                    function and RGB values (energy had to be squared and square rooted). I used
+                                    a topological sort to get the most optimal paths.
+                                </p>
+        
+                                <p></p>
+                                Code is available privately.
+        
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 py-2">
+                        <div class="card card-body h-100">
+                            <h5 class="card-title" style="font-size:2vw;">WordNet</h5>
+                            <p class="card-text" style="text-indent: 40px;">
+                                This was an assignment in my COS 226 (Data Structure and Algorithms) class.
+                                WordNet is a Princeton created lexical database that is grouped by synonyms. The goal of this assignment was to be able to do certain tasks, such as 
+                                finding word relationships and concept origin, by using and constructing a digraph (directed graph).
+                                <p style="text-indent: 40px;">
+                                    Through implementations of modified BFS's(Breadth First Search), and Princeton's Digraph API (allowing
+                                    for typical graph implementation, such as connecting and accessing different edges), I was
+                                    able to explore and program numerous of different word relationships.
+                                </p>
+        
+                                <p></p>
+                                Code is available privately.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 py-2">
+                        <div class="card card-body h-100">
+                            <h5 class="card-title" style="font-size:2vw;">Burrows-Wheeler</h5>
+                            <p class="card-text" style="text-indent: 40px;">
+                                This was an assignment in my COS 226 (Data Structure and Algorithms) class.
+                                Burrows-Wheeler is an algorithm that compresses characters by using specific techniques - 
+                                this allows for data compression and thus, efficiency in the usage of bits on characters.
+                                <p style="text-indent: 40px;">
+                                    I was tasked with implementing the Burrows-Wheeler data compression algorithm, which consists
+                                    of needing to program the Burrows-Wheeler transform algorithm, move to front encoding, and Huffman
+                                    compression. I used a circular array and varying sort techniques, such as key indexed counting to
+                                    properly compress the data given.
+                                </p>
+                                <p></p>
+                                Code is available privately.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-                <!-- <h5 class = "projectLayer">School Projects</h5>
-                <div class="container"> 
-                  <div class = "row" style="text-align: center;">
-                      <div class="col-md-6">
-                            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" id="imageButtonH">
-                                    <div class = "outerPic">
-                                        <div class="innerPic">CovidCollaboration</div>
-                                    </div>
-                            </button>
-                        </div> 
-
-                        <div class="col-md-6">
-                          <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" id="imageButtonH1">
-                                <div class = "outerPic">
-                                    <div class="innerPic">A Blind Date with an Album</div>
-                                </div>
-                            </button>
-                        </div>
-                  </div>
-              </div> -->
 
                     <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -410,6 +426,9 @@
                                 <br>
                                 <a style="text-align:center;" href = "https://github.com/kevin-m17/MazeGenerator" target="_blank"> 
                                     <i class="fab fa-github xs" title = "GitHub"> Github</i></a>
+                                    <br>
+                                    <br>
+                                    <a style="text-align:center;" href = "https://youtu.be/A_qowvh2obE" target="_blank">Demo</a>
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -675,7 +694,7 @@
                                 <i class="fab fa-github xs" title = "GitHub"> Github</i></a>
                                 <br>
                                     <br>
-                                    <a style="text-align:center;" href = "" target="_blank">Demo</a>
+                                    <a style="text-align:center;" href = "https://youtu.be/XaGl3Gl6dfs" target="_blank">Demo</a>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -765,26 +784,6 @@
                         </div>                    
                     </button> -->
 
-                  <!-- <div class="container" id="photos"> -->
-                    <!-- <div class="row no-gutters">
-                        <!-- <br>
-                        <h1> Sensor Data App </h1>
-                        <br>
-                        <br> -->
-                        
-                        <!-- <div class="col-md-6" id="pic">
-                            <img src="sensorapp.png">
-                        </div>
-            
-                        <div class="col-md-6" id="pic">
-                            <img src="sensoremail.png" class = "w-100">
-                            <div class="caption"> 
-                                <!-- <div class="text">Boston</div> -->
-                            <!-- </div>            
-                        </div> 
-                        <br>
-                        <br> -->
-                    <!-- </div> -->
 
                     <!-- <div class="row no-gutters">
                         <div class="col-md-4" id="pic">
@@ -835,10 +834,10 @@
         </div>
 
         <div id="currentwork">
-            <div class="card bg-primary">
+            <div class="card" style="background-color: antiquewhite;"  id="bodycard">
                 <div class="card-body">
                   <h5 class="card-title"><b>My Current Work<hr class = "lined"></b></h5>
-                  <p class="card-text">
+                  <p class="card-text" style="text-align: center;" id="cardtext">
                     At the moment, I'm working on answering unanswered questions in the Stanford Question 
                     Answering Dataset. I am currently working with BERT (Bidirectional Encoder Representations from Transformers)
                     to find answers, in particular to questions that require inferences. BERT works to convert
@@ -934,7 +933,7 @@
 
         <div id="contact">
             <div id="content">
-                <div class="card bg-white">
+                <div class="card" style="background-color: antiquewhite;">
                     <div class="card-body">
                         <h5 class="card-title"><b>Contact Me<hr class = "lined"></b></h5>
                             <div class="container-sm">
